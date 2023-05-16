@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useEffect, useReducer } from "react";
+// import axios from "axios";
+import "./App.css";
+// import Main from "./Main";
+import UseReducer from "./UseReducer";
+
+// const initialstate = {
+//   loading: true,
+//   error: "",
+//   data: [],
+// };
+
+// const reducer = (state, action) => {
+//   switch (action.type) {
+//     case "SUCCESS":
+//       return {
+//         loading: false,
+//         error: "",
+//         data: action.payload,
+//       };
+//     default:
+//       return state;
+//   }
+// };
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  // const [state, dispatch] = useReducer(reducer, initialstate);
+  // console.log(state)
+  // useEffect(() => {
+  //   axios.get("https://api.adviceslip.com/advice").then((res) => {
+  //     console.log(res);
+  //     dispatch({ type: "SUCCESS", payload: res.data });
+  //   });
+  // }, []);
+  return <UseReducer/>;
 }
-
 export default App;
