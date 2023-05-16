@@ -3,6 +3,7 @@ import axios from "axios";
 
 const initialState = {
   data: [],
+  mk: ""
 };
 
 const reducer = (state, action) => {
