@@ -9,7 +9,7 @@ const reducer = (state, action) => {
   switch (action.type) {
     case "SUCCESS":
       return {
-        data: action.payload,
+        data: action.payload, 
       };
     default:
       return state;
